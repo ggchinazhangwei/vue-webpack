@@ -1,0 +1,92 @@
+@mixin size($width, $height) {
+    @if ($width != null) {
+        width: $width;
+    }
+    @if ($height != null) {
+        height: $height;
+    }
+}
+
+@mixin z-index($value) {
+    z-index: $value;
+}
+
+@mixin box-sizing($type: border-box) {
+    box-sizing: $type;
+    -moz-box-sizing: $type;
+    -webkit-box-sizing: $type;
+}
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}
+
+@mixin position($type, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $type;
+    @if $top!=null {
+        top: $top;
+    }
+    @if $right!=null {
+        right: $right;
+    }
+    @if $bottom!=null {
+        bottom: $bottom;
+    }
+    @if $left!=null {
+        left: $left;
+    }
+}
+
+@mixin bg-src($path, $width: 100%, $height: 100%, $p-width: center, $p-height: center) {
+    background-image: url($path);
+    background-size: $width $height;
+    background-position: $p-width $p-height;
+    background-repeat: no-repeat;
+}
+
+@mixin text-overflow($width) {
+    width: $width;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+@mixin text-multi-overflow($width, $line: 3) {
+    width: $width;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $line;
+}
+
+@mixin transition($property, $type: linear, $duration: .2s) {
+    transition: $property $type $duration;
+    -moz-transition: $property $type $duration;
+    -o-transition: $property $type $duration;
+    -webkit-transition: $property $type $duration;
+    -ms-transition: $property $type $duration;
+}
+
+@mixin animation($name, $duration: .2s, $type: linear, $isInfinite: false) {
+    @if $isInfinite==true {
+        animation: $name $duration $type infinite;
+        -o-animation: $name $duration $type infinite;
+        -ms-animation: $name $duration $type infinite;
+        -moz-animation: $name $duration $type infinite;
+        -webkit-animation: $name $duration $type infinite;
+    }
+    @else {
+        animation: $name $duration $type;
+        -o-animation: $name $duration $type;
+        -ms-animation: $name $duration $type;
+        -moz-animation: $name $duration $type;
+        -webkit-animation: $name $duration $type;
+    }
+}
+
+@mixin bg-gradient($deg, $color1, $color2) {
+    background: -webkit-linear-gradient($deg, $color1, $color2);
+    background: -o-linear-gradient($deg, $color1, $color2);
+    background: -moz-linear-gradient($deg, $color1, $color2);
+    background: linear-gradient($deg, $color1, $color2);
+}

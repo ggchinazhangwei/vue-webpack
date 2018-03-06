@@ -1,0 +1,10 @@
+#home{
+    margin: 50px auto;
+    .box{
+        @include size (100px,100px);
+        background: red;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 100px;
+    }
+}
