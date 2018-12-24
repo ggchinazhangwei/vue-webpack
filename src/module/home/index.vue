@@ -14,10 +14,7 @@ export default {
         this.init();
     },
     methods:{
-        init(){
-            this.wow = new WOW();
-            this.wow.init();
-            alert(process.env.NODE_ENV);
+        init(){ 
         }
     }
 }
