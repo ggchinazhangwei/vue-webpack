@@ -1,12 +1,18 @@
-import Index from '@module/home/index.vue';
+import Login from '@module/login';
+import Home from '@module/home';
 
 export default [
     {
         path: '/',
-        redirect: to => '/index'
+        redirect: to => '/login'
     },
     {
-        path: '/index',
-        component: Index
+        path: '/login',
+        component: Login
+    },
+    {
+        path: '/',
+        component: Home,
+        name: 'home'
     },
 ];
