@@ -1,10 +1,121 @@
 #home{
-    margin: 50px auto;
-    .box{
-        @include size (100px,100px);
-        background: red;
-        border-radius: 100%;
-        text-align: center;
-        line-height: 100px;
+    width: 100%;
+    .tab-box{
+        position: relative;
+        .logo{
+            position: absolute;
+            width: 161px;
+            right: 60px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        z-index: 1000;
+        padding: 0 60px;
+        position: fixed;
+        top:0;
+        width: 100%;
+        left: 0;
+        background-color: rgba($color: #000000, $alpha: 0.7);
+        .line{
+            left: 60px;
+            width: calc(100% - 120px);
+            position: absolute;
+            bottom: -2px;
+            height: 2px;
+            background: #fff;
+        }
+        .tab{
+            padding: 0 16px;
+            color: #ffffff;
+            .tab-item{
+                position: relative;
+                width: 124px;
+                height: 108px;
+                padding-top:30px;
+                line-height: 78px;
+                font-size: 22px;  
+                text-align: center;
+                &.active,&:hover{
+                    background-color: rgba($color: #784a19, $alpha: 0.7);
+                    
+                }
+                &:hover{
+                    .chlid{
+                        display: block;
+                    }
+                }
+                .chlid{
+                    display: none;
+                    position: absolute;
+                    width: 100%;
+                    top:100%;
+                    left: 0;
+                    >li{
+                        &:hover,&.active{
+                            background-color: rgba($color: #784a19, $alpha: 0.7);
+                        }
+                        &:last-child{
+                            border: 0;
+                        }
+                        font-size: 20px;
+                        border-bottom: 1px solid #fff;
+                        height: 50px;
+                        line-height: 50px;
+                        background: rgba($color: #fff, $alpha: 0.4);
+                    } 
+                }
+            }
+        }
+    }
+    .banner{
+        .banner-item{
+            >img{
+                width:100%;
+            }
+        }
+    }
+
+    .bannner-swiper{
+        width: 100%;
+        position: relative;
+        .swiper-slide{
+            width: 100%;
+            >img{
+                width: 100%;
+            }
+        }
+        .swiper-prev-wrap{
+            width: 300px;
+            position: absolute;
+            z-index: 100;
+            bottom: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            .swiper-prev{
+                width: 56px;
+                height: 69px;
+                background-image: url('../img/swiper-prev.png');
+                background-size:100%;
+                background-position:center;  
+                &.swiper-button-disabled{
+                    background-image: url('../img/swiper-prev-disabled.png');
+                    background-size:100%;
+                    background-position:center;   
+                }
+            }
+            .swiper-next{
+                width: 56px;
+                height: 69px;
+                background-size:100%;
+                background-position:center;  
+                background-image: url('../img/swiper-next.png');
+                &.swiper-button-disabled{
+                    background-image: url('../img/swiper-next-disabled.png'); 
+                    background-size:100%;
+                    background-position:center;  
+                }
+            }
+            
+        }
     }
 }

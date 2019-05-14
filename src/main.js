@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import 'animate.css/animate.css';
 import 'element-ui/lib/theme-chalk/index.css';
+import 'swiper/dist/css/swiper.min.css';
 import '@asset/sass/style.scss';
 import '@asset/js/wow.js';
 import ElementUI from 'element-ui';

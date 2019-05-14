@@ -21,6 +21,7 @@
     "element-ui": "^2.4.11",
     "es6-promise": "^4.1.1",
     "node-sass": "^4.11.0",
+    "swiper": "^4.5.0",
     "url-loader": "^1.1.2",
     "vue": "^2.5.8",
     "vue-router": "^3.0.1",
