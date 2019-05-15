@@ -86,6 +86,14 @@
   position: relative;
 }
 
+#home .bannner-swiper .banner-log {
+  position: absolute;
+  bottom: 40px;
+  right: 44px;
+  width: 70px;
+  z-index: 101;
+}
+
 #home .bannner-swiper .swiper-slide {
   width: 100%;
 }

@@ -34,6 +34,7 @@
             <div class="swiper-next"></div>
         </div>
         
+        <img :src="require('@asset/img/bannerlog.png')" class="banner-log">
         
     </div>
     <div class="banner"  v-show="activeindex!=='index'">

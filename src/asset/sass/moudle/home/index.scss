@@ -76,6 +76,13 @@
     }
 
     .bannner-swiper{
+        .banner-log{
+            position: absolute;
+            bottom: 40px;
+            right: 44px;
+            width: 70px;
+            z-index: 101;
+        }
         width: 100%;
         position: relative;
         .swiper-slide{
