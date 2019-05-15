@@ -47,6 +47,9 @@
         <img :src="item.img">
       </div>
     </div>
+
+
+    <div class="footer">招商热线：400-039-8366</div>
   </section>
 </template>
 <script>

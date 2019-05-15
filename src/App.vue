@@ -1,7 +1,5 @@
 <template>
-    <div class="website-view" layout="column" layout-align="center center">
-        <router-view></router-view>
-    </div>
+     <router-view></router-view>
 </template>
 <script>
 export default {

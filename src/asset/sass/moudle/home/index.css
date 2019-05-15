@@ -8,7 +8,7 @@
   padding: 0 60px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: calc(100% - 18px);
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -100,6 +100,7 @@
 
 #home .bannner-swiper .swiper-slide > img {
   width: 100%;
+  display: block;
 }
 
 #home .bannner-swiper .swiper-prev-wrap {
@@ -137,4 +138,18 @@
   background-image: url("../img/swiper-next-disabled.png");
   background-size: 100%;
   background-position: center;
+}
+
+#home .footer {
+  position: fixed;
+  width: calc(100% - 18px);
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: right;
+  z-index: 1000;
 }

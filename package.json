@@ -18,7 +18,6 @@
   "dependencies": {
     "animate.css": "^3.6.1",
     "axios": "^0.18.0",
-    "element-ui": "^2.4.11",
     "es6-promise": "^4.1.1",
     "node-sass": "^4.11.0",
     "swiper": "^4.5.0",
@@ -54,6 +53,7 @@
     "vue-template-compiler": "^2.5.5",
     "webpack": "2.6.1",
     "webpack-bundle-analyzer": "^2.11.0",
-    "webpack-dev-server": "^2.9.4"
+    "webpack-dev-server": "^2.9.4",
+    "babel-plugin-transform-vue-jsx": "^3.5.0"
   }
 }
